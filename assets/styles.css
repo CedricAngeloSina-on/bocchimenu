@@ -49,6 +49,10 @@ section {
     min-height: 200px;
     outline: 2px dashed blue;
     display: flex;
+    
+}
+
+section.title {
     align-items: flex-end;
 }
 
@@ -87,8 +91,14 @@ section {
 /* XS Sizing */
 @media screen and (min-width: 320px) and (min-height: 700px) {
     /* Your CSS styles for screens with a maximum width of 320x700 */
+    body {
+        width: 90%;
+    }
+
+    section.title {
+        justify-content: center;
+    }
     .title {
         font-size: 3rem; /* Adjust the font size as needed */
-        margin: 0; /* Remove default margin */
     }
 }
