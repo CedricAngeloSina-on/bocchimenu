@@ -320,6 +320,10 @@ footer {
 
 /* XL Sizing (PC)*/
 @media screen and (min-width: 1536px)  {
+    .logo {
+        width: 10%;
+    }
+
     .food-container {
         display: flex;
         flex-direction: row;
