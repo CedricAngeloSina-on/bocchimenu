@@ -42,7 +42,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    outline: 2px solid green;
+    /* outline: 2px solid green; */
     min-height: 5vh;
 }
 
@@ -88,7 +88,7 @@ section.title {
 .food {
     min-height: auto;
     max-width: 100%;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,15 +208,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: #fff000;
-    outline: 2px solid green;
+    /* outline: 2px solid green; */
     min-height: 3vh;
 }
 
 .social-icons {
     height: 100%;
     min-width: 60%;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
