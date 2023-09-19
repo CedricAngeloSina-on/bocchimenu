@@ -37,32 +37,29 @@ html {
 body {
     width: 80%;
 }
-/* Reset some default styles for the header */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* outline: 2px solid green; */
     min-height: 5vh;
 }
 
-/* Style for the logo */
 .logo {
-    height: 100%; /* Maintain aspect ratio */
+    height: 100%; 
     width: 15%;
 }
 
 .logo img {
     margin: 0px;
 }
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-/* Style for the title */
-
 
 section {
     width: 100%;
@@ -81,14 +78,13 @@ section.title {
 .title {
     font-style: bold;
     font-weight: 800;
-    color: #fff000; /* Text color */
-    margin: 0; /* Remove default margin */
+    color: #fff000; 
+    margin: 0;
 }
 
 .food {
     min-height: auto;
     max-width: 100%;
-    /* outline: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,13 +141,11 @@ section.title {
 
 .food-desc {
     padding-bottom: 20px;
-}
-
-.food-desc, .price-and-button {
     color: white;
 }
 
 .price-and-button {
+    color: white;
     display: flex;
     gap: 15px;
 }
@@ -191,13 +185,12 @@ button {
     background-color: transparent;
     color: white;
     border: 2px solid white;
-    border-radius: 10px; /* You can adjust the radius as needed */
-    padding: 10px 20px; /* Adjust padding as needed */
-    cursor: pointer; /* Add a pointer cursor for usability */
-    font-size: 2rem; /* Adjust font size as needed */
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 2rem; 
   }
   
-  /* Optional: Add hover effect */
 button:hover {
     background-color: white;
     color: black;
@@ -208,14 +201,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* outline: 2px solid green; */
     min-height: 3vh;
 }
 
 .social-icons {
     height: 100%;
     min-width: 60%;
-    /* outline: 2px solid blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -227,7 +218,7 @@ footer {
 }
 
 .social-icons img {
-    height: 50px; /* Maintain aspect ratio */
+    height: 50px; 
     width: 50px;
     margin-bottom: 0px;
 }
@@ -235,17 +226,17 @@ footer {
 
 /* XS Sizing (Phone)*/
 @media screen and (min-width: 320px) {
-    /* Your CSS styles for screens with a maximum width of 320x700 */
+
     body {
         width: 90%;
     }
 
     .logo {
-        height: 100%; /* Maintain aspect ratio */
+        height: 100%;
         width: 20%;
     }
     .title {
-        font-size: 2rem; /* Adjust the font size as needed */
+        font-size: 2rem; 
         text-wrap: balance;
     }
 
@@ -268,28 +259,19 @@ footer {
     }
 
     button {
-        font-size: 1.25rem; /* Adjust font size as needed */
+        font-size: 1.25rem;
     }
-
-
-      
-
-
-
-
 }
 
 /* MD Sizing (Tablet)*/
 @media screen and (min-width: 900px) {
-    /* Your CSS styles for screens with at least 900x700 */
 
-    
     body {
         width: 95%;
     }
 
     .title {
-        font-size: 3rem; /* Adjust the font size as needed */
+        font-size: 3rem; 
     }
 
     .food {
@@ -298,12 +280,17 @@ footer {
     }
 
     .food-images {
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .extra .food-images  {
+        justify-content: flex-start;
         flex-direction: row;
     }
 
     img {
-        width: 46%;
+        width: 43%;
         padding: 15px;
         border-radius: 25px;
         margin-bottom: 20px;
@@ -325,15 +312,35 @@ footer {
         font-size: 2.25rem;
     }
     
-    /* Social media links */
     .social-icons {
         min-width: 35%;
     }
     
-    /* LG Sizing (PC)*/
-    @media screen and (min-width: 1200px)  {
-        /* Your CSS styles for screens with at least 1200x700 */
+}
+
+/* XL Sizing (PC)*/
+@media screen and (min-width: 1536px)  {
+    .food-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
+    
+    .food {
+        width: 48%;
+        justify-content: flex-start;
+    }
+
+    .food-images {
+        flex-direction: column;
+ 
+    }
+
+    img {
+        width: 80%;
+    }
+
 }
 
 
