@@ -7,10 +7,13 @@
     --kita: #ed2c37;
 }
 
-html, body , img{
+html, body {
+    background-color: rgb(15, 15, 15);
+}
+
+html, body, p, img{
     margin: 0;
     padding: 0;
-    background-color: rgb(15, 15, 15);
 
 }
 
@@ -19,11 +22,9 @@ h1, p {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-p {
-    margin: 0;
+h1 {
+    margin-bottom: 0;
 }
-
-
 
 html {
     min-height: 100vh;
@@ -44,8 +45,6 @@ header {
     outline: 2px solid green;
     min-height: 5vh;
 }
-
-
 
 /* Style for the logo */
 .logo {
@@ -69,12 +68,14 @@ section {
     width: 100%;
     min-height: 200px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
 section.title {
+    width: 80%;
     align-items: center;
-    
+    text-align: center;
 }
 
 .title {
@@ -84,19 +85,14 @@ section.title {
     margin: 0; /* Remove default margin */
 }
 
-.container {
-    height: auto;
-}
-
 .food {
-    min-height: 1000px;
-    min-width: 100%;
+    min-height: auto;
+    max-width: 100%;
     outline: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
-    
+    padding-bottom: 100px;
 }
 
 .food-images {
@@ -116,9 +112,6 @@ section.title {
 .title-and-desc, .price-and-button {
     width: 100%;
 }
-
-
-
 
 .bocchi > .name, .bocchi .food-title {
     color: var(--bocchi);
@@ -168,9 +161,9 @@ section.title {
 }
 
 img {
-    width: 90%;
-    padding: 20px;
-    border-radius: 25px;
+    width: 95%;
+    padding: 8px;
+    border-radius: 16px;
     margin-bottom: 20px;
 }
 
@@ -217,16 +210,17 @@ footer {
     justify-content: center;
     border: #fff000;
     outline: 2px solid green;
-    height: 5vh;
+    min-height: 3vh;
 }
 
-/* Social media links */
 .social-icons {
     height: 100%;
-    width: 30%;
+    min-width: 60%;
     outline: 2px solid blue;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    color: var(--bocchi);
 }
 
 .social-icons a {
@@ -236,48 +230,111 @@ footer {
 .social-icons img {
     height: 50px; /* Maintain aspect ratio */
     width: 50px;
+    margin-bottom: 0px;
 }
 
-/* LG Sizing (PC)*/
-@media screen and (min-width: 1200px) and (min-height: 700px) {
-    /* Your CSS styles for screens with at least 1200x700 */
-}
 
-/* MD Sizing (Tablet)*/
-@media screen and (min-width: 900px) and (min-height: 700px) {
-    /* Your CSS styles for screens with at least 900x700 */
-    body {
-        width: 85%;
-    }
-
-    section.title {
-        justify-content: center;
-        /* align-items: center; */
-    }
-    .title {
-        font-size: 4rem; /* Adjust the font size as needed */
-    }
-
-    .food {
-        flex-direction: column;
-    }
-}
 /* XS Sizing (Phone)*/
-@media screen and (min-width: 320px) and (min-height: 700px) {
+@media screen and (min-width: 320px) {
     /* Your CSS styles for screens with a maximum width of 320x700 */
     body {
         width: 90%;
     }
 
-    section.title {
-        justify-content: center;
-        /* align-items: center; */
+    .logo {
+        height: 100%; /* Maintain aspect ratio */
+        width: 20%;
     }
     .title {
-        font-size: 4rem; /* Adjust the font size as needed */
+        font-size: 2rem; /* Adjust the font size as needed */
+        text-wrap: balance;
+    }
+
+    .description .food-desc {
+        font-size: 1.5rem;
     }
 
     .food {
         flex-direction: column;
     }
+
+    .food .food-title {
+        font-size: 2.25rem;
+        font-style: bold;
+        font-weight: 800;
+    }
+
+    .price{
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1.25rem; /* Adjust font size as needed */
+    }
+
+
+      
+
+
+
+
 }
+
+/* MD Sizing (Tablet)*/
+@media screen and (min-width: 900px) {
+    /* Your CSS styles for screens with at least 900x700 */
+
+    
+    body {
+        width: 95%;
+    }
+
+    .title {
+        font-size: 3rem; /* Adjust the font size as needed */
+    }
+
+    .food {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .food-images {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    img {
+        width: 46%;
+        padding: 15px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+    }
+
+    .food .food-title {
+        font-size: 3.5rem;
+    }
+
+    .description .food-desc {
+        font-size: 2.5rem;
+    }
+
+    .price {
+        font-size: 3rem;
+    }
+
+    button {
+        font-size: 2.25rem;
+    }
+    
+    /* Social media links */
+    .social-icons {
+        min-width: 35%;
+    }
+    
+    /* LG Sizing (PC)*/
+    @media screen and (min-width: 1200px)  {
+        /* Your CSS styles for screens with at least 1200x700 */
+    }
+}
+
+
