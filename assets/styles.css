@@ -7,7 +7,7 @@
     --kita: #ed2c37;
 }
 
-html, body  {
+html, body , img{
     margin: 0;
     padding: 0;
     background-color: rgb(15, 15, 15);
@@ -41,21 +41,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px; /* Add some padding for spacing */
-    border: #fff000;
     outline: 2px solid green;
-    
+    min-height: 5vh;
 }
 
 
 
 /* Style for the logo */
-.logo img {
-    width: 50px; /* Set the width of your logo */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add some spacing between logo and title */
+.logo {
+    height: 100%; /* Maintain aspect ratio */
+    width: 15%;
 }
 
+.logo img {
+    margin: 0px;
+}
 main {
     display: flex;
     justify-content: center;
@@ -95,7 +95,6 @@ section.title {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     padding-bottom: 50px;
     
 }
@@ -209,28 +208,35 @@ button {
 button:hover {
     background-color: white;
     color: black;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s, color 0.3s; 
 }
-  
 
 footer {
-    color: #fff; /* Text color for the footer */
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #fff000;
+    outline: 2px solid green;
+    height: 5vh;
 }
 
 /* Social media links */
 .social-icons {
-    margin-top: 10px; /* Adjust spacing as needed */
+    height: 100%;
+    width: 30%;
+    outline: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
 }
 
 .social-icons a {
-    color: #fff; /* Color for the social media icons */
     text-decoration: none;
-    font-size: 20px; /* Adjust the icon size as needed */
-    margin: 0 10px; /* Adjust spacing between icons as needed */
-}  
+}
 
+.social-icons img {
+    height: 50px; /* Maintain aspect ratio */
+    width: 50px;
+}
 
 /* LG Sizing (PC)*/
 @media screen and (min-width: 1200px) and (min-height: 700px) {
@@ -240,8 +246,22 @@ footer {
 /* MD Sizing (Tablet)*/
 @media screen and (min-width: 900px) and (min-height: 700px) {
     /* Your CSS styles for screens with at least 900x700 */
+    body {
+        width: 85%;
+    }
+
+    section.title {
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .title {
+        font-size: 4rem; /* Adjust the font size as needed */
+    }
+
+    .food {
+        flex-direction: column;
+    }
 }
-  
 /* XS Sizing (Phone)*/
 @media screen and (min-width: 320px) and (min-height: 700px) {
     /* Your CSS styles for screens with a maximum width of 320x700 */
