@@ -80,6 +80,12 @@ section.title {
     font-weight: 800;
     color: #fff000; 
     margin: 0;
+    text-wrap: balance;
+}
+
+.title p {
+    color: white;
+    font-weight: 500;
 }
 
 .food {
@@ -240,6 +246,10 @@ footer {
         text-wrap: balance;
     }
 
+    .title p {
+        font-size: 1.5rem; 
+    }
+
     .description .food-desc {
         font-size: 1.5rem;
     }
@@ -272,6 +282,10 @@ footer {
 
     .title {
         font-size: 3rem; 
+    }
+
+    .title p {
+        font-size: 2rem; 
     }
 
     .food {
