@@ -47,13 +47,14 @@ main {
 section {
     width: 100%;
     min-height: 200px;
-    outline: 2px dashed blue;
+    
     display: flex;
     
 }
 
 section.title {
     align-items: flex-end;
+    
 }
 
 .title {
@@ -71,6 +72,11 @@ section.title {
     
 }
 
+.food {
+    min-height: 500px;
+    min-width: 100%;
+    outline: 2px solid red;
+}
 
 
 
@@ -78,17 +84,17 @@ section.title {
 
 
 
-/* LG Sizing */
+/* LG Sizing (PC)*/
 @media screen and (min-width: 1200px) and (min-height: 700px) {
     /* Your CSS styles for screens with at least 1200x700 */
 }
 
-/* MD Sizing */
+/* MD Sizing (Tablet)*/
 @media screen and (min-width: 900px) and (min-height: 700px) {
     /* Your CSS styles for screens with at least 900x700 */
 }
   
-/* XS Sizing */
+/* XS Sizing (Phone)*/
 @media screen and (min-width: 320px) and (min-height: 700px) {
     /* Your CSS styles for screens with a maximum width of 320x700 */
     body {
@@ -97,8 +103,9 @@ section.title {
 
     section.title {
         justify-content: center;
+        /* align-items: center; */
     }
     .title {
-        font-size: 3rem; /* Adjust the font size as needed */
+        font-size: 4rem; /* Adjust the font size as needed */
     }
 }
