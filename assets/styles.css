@@ -151,8 +151,10 @@ section.title {
 	padding-bottom: 20px;
 }
 
-.extra > .name,
-.extra .food-title {
+.latte > .name,
+.latte .food-title,
+.juice > .name,
+.juice .food-title {
 	color: white;
 	font-size: 4rem;
 	padding-bottom: 20px;
@@ -197,7 +199,8 @@ img {
 	background-color: var(--kita);
 }
 
-.extra img {
+.latte img,
+.juice img {
 	background-color: white;
 }
 
@@ -407,7 +410,8 @@ form {
 		flex-direction: row;
 	}
 
-	.extra .food-images {
+	.latte .food-images,
+	.juice .food-images {
 		justify-content: flex-start;
 		flex-direction: row;
 	}
